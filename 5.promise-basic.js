@@ -7,8 +7,9 @@
 // 6. 执行器函数接收两个参数，且会立即执行；
 
 const p1 = new Promise((resolve, reject) => {
-  resolve('成功')
-  reject('失败')
+  setTimeout(() => {
+    resolve('成功')
+  }, 1000)
 })
 
 p1.then((value) => {
