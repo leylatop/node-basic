@@ -50,26 +50,3 @@ class Promise {
     }
   }
 }
-
-const p1 = new Promise((resolve, reject) => {
-  // resolve('成功')
-  // reject('失败')
-  // throw new Error('未知错误')
-
-  console.log(1)
-  setTimeout(() => {
-    resolve('成功')
-  }, 1000)
-})
-
-p1.then((value) => {
-  console.log('成功了耶', value)
-}, (reason) => {
-  console.log('失败了哦', reason)
-})
-
-p1.then((value) => {
-  console.log('成功了耶', value)
-}, (reason) => {
-  console.log('失败了哦', reason)
-})
